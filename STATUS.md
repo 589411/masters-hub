@@ -8,8 +8,8 @@
 另有 3 顆單顆即用職場工具。Gem/GPT 皆建在 **jjaimark1@gmail.com** 帳號、公開分享。
 
 ## 下一個具體動作 ⭐
-DNS 生效後（Cloudflare 加 `CNAME masters → 589411.github.io`，灰雲），到
-repo Settings → Pages 勾 **Enforce HTTPS**。
+頁面已轉 production（2026-07-10 移除原型警示框與「設計說明／C 方案」memo，footer 只留能力階梯敘事）。
+若 DNS 尚未生效：到 repo Settings → Pages 勾 **Enforce HTTPS**（Cloudflare `CNAME masters → 589411.github.io`，灰雲）。
 
 ## 架構
 - `index.html`：唯一內容檔（無建置流程，改它就是改站）。
