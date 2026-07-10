@@ -1,0 +1,25 @@
+# STATUS — masters-hub（大師專家團 Hub）
+
+**最後更新：** 2026-07-10
+**線上：** https://masters.launchdock.app （單一 index.html 靜態頁）
+
+## 一句話現況
+5 大主題包、22 位大師打包成 Gemini Gem＋ChatGPT GPT，依任務挑一組專家點了就用；
+另有 3 顆單顆即用職場工具。Gem/GPT 皆建在 **jjaimark1@gmail.com** 帳號、公開分享。
+
+## 下一個具體動作 ⭐
+DNS 生效後（Cloudflare 加 `CNAME masters → 589411.github.io`，灰雲），到
+repo Settings → Pages 勾 **Enforce HTTPS**。
+
+## 架構
+- `index.html`：唯一內容檔（無建置流程，改它就是改站）。
+- `CNAME`：`masters.launchdock.app`。
+- 部署：GitHub Pages（master / root）＋ Cloudflare 子網域。
+
+## 大師連結來源
+所有 Gem（gemini.google.com/gem/…）與 GPT（chatgpt.com/g/…）連結直接寫在 index.html 的卡片裡。
+要新增大師：在對應主題 `<section>` 內複製一張 `.card` 改連結即可。
+
+## 已知坑
+- Cloudflare CNAME 必須 **DNS only（灰雲）**，橘雲會與 GitHub SSL 打架。
+- 顧客洞察 10 位大師的 Gem/GPT 沿用舊有連結；定價/品牌/談判/組織 12 位為 2026-07-10 新建。
