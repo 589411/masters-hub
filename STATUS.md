@@ -8,8 +8,11 @@
 另有 3 顆單顆即用職場工具。Gem/GPT 皆建在 **jjaimark1@gmail.com** 帳號、公開分享。
 
 ## 下一個具體動作 ⭐
-頁面已轉 production（2026-07-10 移除原型警示框與「設計說明／C 方案」memo，footer 只留能力階梯敘事）。
-若 DNS 尚未生效：到 repo Settings → Pages 勾 **Enforce HTTPS**（Cloudflare `CNAME masters → 589411.github.io`，灰雲）。
+✅ 全部上線完成（2026-07-10）。頁面已轉 production（移除原型警示框與「設計說明／C 方案」memo）；
+DNS check successful、**Enforce HTTPS 已啟用**、站台 https://masters.launchdock.app/ live。
+目前無待辦；下次要新增大師 → 在對應主題 `<section>` 內複製一張 `.card` 改連結。
+
+> 帳號提醒：repo 屬 **589411** 帳號，改 Pages 設定要用 589411 登入的 Chrome（JosephnJoy 帳號沒有 admin 權限、看不到 Settings）。
 
 ## 架構
 - `index.html`：唯一內容檔（無建置流程，改它就是改站）。
