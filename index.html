@@ -75,6 +75,49 @@
   footer{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;font-size:13px;color:var(--mute);}
   footer b{color:var(--navy);}
   .ladder{background:#fffef2;border:1px solid #e6dfa8;border-radius:10px;padding:12px 16px;font-size:13.5px;color:#6b5d1a;margin-top:14px;}
+
+  /* ===== 定律寶庫 ===== */
+  .vault-intro{background:linear-gradient(135deg,#12303a 0%,#26565f 100%);color:#fff;border-radius:16px;padding:22px 24px;margin:6px 0 6px;}
+  .vault-intro .k{color:var(--yellow);font-weight:700;font-size:12.5px;letter-spacing:1px;}
+  .vault-intro h3{margin:7px 0 7px;font-size:20px;color:#fff;}
+  .vault-intro p{margin:0;color:#cfe3e8;font-size:14px;max-width:700px;}
+  .law-group{margin:26px 0 0;}
+  .law-group h4{font-size:16.5px;color:var(--navy);margin:0 0 3px;display:flex;align-items:center;gap:9px;flex-wrap:wrap;}
+  .law-group .gtag{font-size:11px;font-weight:800;color:#8a6d00;background:#fff2c2;border:1px solid #ecd98a;border-radius:20px;padding:2px 9px;}
+  .law-group .gsub{color:var(--mute);font-size:13px;margin:2px 0 14px;}
+  .law-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:12px;}
+  .law{border:1px solid var(--line);border-left:3px solid var(--yellow);border-radius:12px;background:#fff;padding:14px 16px;box-shadow:0 2px 8px rgba(18,48,58,.04);transition:transform .12s ease,box-shadow .12s ease;}
+  .law:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(18,48,58,.09);}
+  .law .lh{display:flex;align-items:baseline;gap:8px;margin-bottom:6px;flex-wrap:wrap;}
+  .law .no{font-size:11px;font-weight:800;color:#8a6d00;background:#fff2c2;border:1px solid #ecd98a;border-radius:5px;padding:1px 6px;line-height:1.4;}
+  .law .lname{font-weight:700;font-size:16px;color:var(--navy);}
+  .law .len{font-size:11.5px;color:#9aa7b0;font-weight:600;letter-spacing:.3px;}
+  .law .core{font-size:13.5px;color:var(--tealD);font-weight:700;margin-bottom:6px;line-height:1.45;}
+  .law .origin{font-size:12.5px;color:var(--mute);line-height:1.55;}
+
+  /* ===== 數據決策 ===== */
+  .data-intro{background:linear-gradient(135deg,#1e6b78 0%,#2f8f9d 100%);color:#fff;border-radius:16px;padding:22px 24px;margin:6px 0 4px;}
+  .data-intro .k{color:var(--yellow);font-weight:700;font-size:12.5px;letter-spacing:1px;}
+  .data-intro h3{margin:7px 0 7px;font-size:20px;color:#fff;}
+  .data-intro p{margin:0;color:#e2f1f3;font-size:14px;max-width:700px;}
+  .levels-cap{font-size:12.5px;color:var(--mute);margin:16px 0 8px;font-weight:600;}
+  .levels-cap b{color:var(--tealD);}
+  .levels{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px;}
+  .level{border:1px solid var(--line);border-radius:12px;background:#fff;padding:13px 15px;border-top:3px solid var(--teal);}
+  .level .lv{font-size:11px;font-weight:800;color:var(--teal);letter-spacing:1px;}
+  .level .lvn{font-weight:700;font-size:15.5px;color:var(--navy);margin:4px 0 2px;}
+  .level .lvq{font-size:12.5px;color:var(--tealD);font-weight:700;margin-bottom:5px;}
+  .level .lvex{font-size:12px;color:var(--mute);line-height:1.5;}
+  .dm-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:12px;}
+  .dm{border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:12px;background:#fff;padding:14px 16px;box-shadow:0 2px 8px rgba(18,48,58,.04);transition:transform .12s ease,box-shadow .12s ease;}
+  .dm:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(18,48,58,.09);}
+  .dm .tag{display:inline-block;font-size:11px;font-weight:700;color:var(--tealD);background:#e7f2f4;border-radius:6px;padding:2px 9px;margin-bottom:8px;}
+  .dm .dh{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;}
+  .dm .dname{font-weight:700;font-size:16px;color:var(--navy);}
+  .dm .den{font-size:11.5px;color:#9aa7b0;font-weight:600;letter-spacing:.3px;}
+  .dm .desc{font-size:13px;color:var(--mute);line-height:1.5;margin-bottom:9px;}
+  .dm .ex{font-size:12.5px;color:#3a4650;background:var(--light);border-radius:8px;padding:7px 11px;line-height:1.5;}
+  .dm .ex b{color:var(--tealD);font-weight:700;}
 </style>
 </head>
 <body>
@@ -84,7 +127,7 @@
     <p class="eyebrow">🎓 AI 使用能力階梯 · 第 4 階跨平台載入</p>
     <h1>大師專家團</h1>
     <p>把百年來的管理、行銷、創新理論，打包成一個個「點一下就能用」的 AI 專家。挑一個你正在面對的任務，整組大師連同工作流一次交到你手上。</p>
-    <p class="meta">5 個主題包 · 22 位大師 ＋ 3 顆職場工具 · Gem 與 GPT 雙平台全上線（職場工具限 Gem）</p>
+    <p class="meta">5 個主題包 · 22 位大師 ＋ 3 顆職場工具 ＋ 30 條管理定律寶庫 ＋ 數據決策地圖 · Gem 與 GPT 雙平台全上線（職場工具限 Gem）</p>
   </div>
 </div>
 
@@ -102,6 +145,8 @@
     <a class="on" href="#nego">談判說服</a>
     <a class="on" href="#lead">組織與領導</a>
     <a class="on" href="#tools">🧰 職場工具</a>
+    <a class="on" href="#vault">📜 定律寶庫</a>
+    <a class="on" href="#data">📊 數據決策</a>
   </div>
 
   <!-- ===== 主題包①：顧客洞察 ===== -->
@@ -402,6 +447,355 @@
         <div class="theory">黃金圈 · Start With Why</div>
         <div class="task">從「為什麼」（Why→How→What）出發，找出使命、由內而外凝聚團隊與顧客。</div>
         <div class="btns"><a class="gem" href="https://gemini.google.com/gem/10lUnRT2MUQAGxjMMyr0NG_tGi9Hw1boh?usp=sharing" target="_blank" rel="noopener">開 Gem</a><a class="gpt" href="https://chatgpt.com/g/g-6a50384192948191be70cb019f411a3c-sinek-huang-jin-quan-gu-wen" target="_blank" rel="noopener">開 GPT</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 管理定律寶庫 ===== -->
+  <section class="theme" id="vault">
+    <div class="theme-head">
+      <span class="dot"></span>
+      <h2>管理定律寶庫</h2>
+      <span class="pill">📜 典藏 · 30 條定律與效應</span>
+    </div>
+    <p class="theme-sub">大師們站在的巨人肩膀。把百年來改變商業思維的定律與效應，收成一座隨手速查的寶庫——依「競爭成長／組織管理／決策思維／認知心理」四大主題編排，保留典藏編號。</p>
+
+    <div class="vault-intro">
+      <div class="k">📜 怎麼用這座寶庫</div>
+      <h3>看懂規律，才知道要召喚哪位大師</h3>
+      <p>上半部的大師幫你「做事」，這座寶庫幫你「看懂局面」。遇到卡關時，先在這裡找到對應的定律，理解背後的力學，再回到對應主題挑一組專家出手——診斷用定律，行動找大師。</p>
+    </div>
+
+    <!-- 主題一：競爭與成長 -->
+    <div class="law-group">
+      <h4>競爭與成長 <span class="gtag">為什麼強者愈強</span></h4>
+      <p class="gsub">市場為何兩極化、為何不進步就等於倒退——理解成長與競爭的底層動力學。</p>
+      <div class="law-grid">
+        <div class="law">
+          <div class="lh"><span class="no">01</span><span class="lname">馬太效應</span><span class="len">Matthew Effect</span></div>
+          <div class="core">強者愈強、弱者愈弱——優勢會自我累積。</div>
+          <div class="origin">語出《馬太福音》「凡有的，還要加給他」，社會學家莫頓（Robert Merton）用以描述資源與名聲的兩極化。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">03</span><span class="lname">紅皇后效應</span><span class="len">Red Queen Hypothesis</span></div>
+          <div class="core">不進步，就等於倒退——得拚命跑才能待在原地。</div>
+          <div class="origin">演化生物學家范·瓦倫借《愛麗絲鏡中奇遇》紅皇后之語，比喻激烈競爭下永不停歇的演化壓力。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">04</span><span class="lname">鯰魚效應</span><span class="len">Catfish Effect</span></div>
+          <div class="core">放進一條鯰魚，整槽沙丁魚都活了——競爭激發活力。</div>
+          <div class="origin">挪威漁夫在魚槽放入會追逐沙丁魚的鯰魚，藉引入競爭者維持整體的求生動力。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">66</span><span class="lname">滾雪球效應</span><span class="len">Snowball Effect</span></div>
+          <div class="core">複利的力量——小優勢在時間裡越滾越大。</div>
+          <div class="origin">巴菲特發揚的投資隱喻，強調長期積累與複利的巨大威力。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">80</span><span class="lname">快魚理論</span><span class="len">Fast Fish Theory</span></div>
+          <div class="core">贏的不是大魚，是反應快的魚。</div>
+          <div class="origin">思科前執行長錢伯斯提出——規模大不一定勝，速度與適應力才決定生死。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">13</span><span class="lname">內捲漩渦</span><span class="len">Involution</span></div>
+          <div class="core">資源有限時，內部過度而無意義的競爭。</div>
+          <div class="origin">人類學家紀爾茲原指農業停滯，近年轉為形容群體零和內耗的社會學流行語。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">16</span><span class="lname">摩爾定律</span><span class="len">Moore's Law</span></div>
+          <div class="core">每 18–24 個月，效能翻一倍。</div>
+          <div class="origin">Intel 共同創辦人摩爾 1965 年預測積體電路電晶體數約每兩年倍增，推動了整個資訊時代。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">12</span><span class="lname">格羅夫定律</span><span class="len">Grove's Law</span></div>
+          <div class="core">技術跑得比組織與人適應的速度更快。</div>
+          <div class="origin">Intel 前執行長格羅夫指出，高科技產業的變革速度常超越組織與個人的調適能力。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 主題二：組織與管理 -->
+    <div class="law-group">
+      <h4>組織與管理 <span class="gtag">團隊為何卡住</span></h4>
+      <p class="gsub">升遷、膨脹、短板、內耗——組織運作裡一再重演的鐵律。</p>
+      <div class="law-grid">
+        <div class="law">
+          <div class="lh"><span class="no">08</span><span class="lname">彼得原理</span><span class="len">Peter Principle</span></div>
+          <div class="core">人會被升到自己無法勝任的位置為止。</div>
+          <div class="origin">管理學家勞倫斯·彼得 1969 年提出——層級組織裡，稱職就升遷，直到升上不稱職的職位才停。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">18</span><span class="lname">帕金森定律</span><span class="len">Parkinson's Law</span></div>
+          <div class="core">工作會膨脹，塞滿你給它的所有時間。</div>
+          <div class="origin">歷史學家帕金森 1955 年提出，諷刺官僚組織的低效與自我膨脹。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">06</span><span class="lname">木桶原理</span><span class="len">Cannikin Law</span></div>
+          <div class="core">一桶水裝多少，取決於最短的那塊板。</div>
+          <div class="origin">源於李比希的農業定律，轉為管理學的「短板效應」——最弱的環節決定整體上限。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">07</span><span class="lname">長板效應</span><span class="len">Long Board Effect</span></div>
+          <div class="core">別急著補短板，先把最長那塊發揮到極致。</div>
+          <div class="origin">木桶原理的反思——精細分工下，用核心競爭力取勝，短板交給團隊互補。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">82</span><span class="lname">洛伯定理</span><span class="len">Loeber's Theorem</span></div>
+          <div class="core">好主管要讓團隊在你不在時也能自轉。</div>
+          <div class="origin">管理法則，強調建立標準化制度，而非事事親力親為。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">79</span><span class="lname">螃蟹效應</span><span class="len">Crab Mentality</span></div>
+          <div class="core">一隻要爬出桶，其他螃蟹會把牠拉回來。</div>
+          <div class="origin">生動的行為隱喻，比喻組織裡的嫉妒與互相扯後腿。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 主題三：決策與思維 -->
+    <div class="law-group">
+      <h4>決策與思維 <span class="gtag">想清楚再出手</span></h4>
+      <p class="gsub">怎麼推理、怎麼取捨、怎麼不被過去綁架——決策者的思維工具箱。</p>
+      <div class="law-grid">
+        <div class="law">
+          <div class="lh"><span class="no">84</span><span class="lname">第一性原理</span><span class="len">First Principles</span></div>
+          <div class="core">剝到最根本，從頭推理，而非類比慣例。</div>
+          <div class="origin">源於亞里斯多德，馬斯克將其推廣到商業創新——回到最基礎的條件重新推導。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">75</span><span class="lname">奧卡姆剃刀</span><span class="len">Occam's Razor</span></div>
+          <div class="core">如無必要，勿增實體——最簡單的解通常最對。</div>
+          <div class="origin">14 世紀邏輯學家奧卡姆的威廉提出的簡約法則。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">19</span><span class="lname">沉沒成本</span><span class="len">Sunk Cost Fallacy</span></div>
+          <div class="core">已花掉、收不回的成本，不該綁架下一步決策。</div>
+          <div class="origin">行為經濟學概念——人常因不甘先前投入，在錯誤的方向上越陷越深。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">02</span><span class="lname">莫非定律</span><span class="len">Murphy's Law</span></div>
+          <div class="core">凡可能出錯的，就一定會出錯——先做好防範。</div>
+          <div class="origin">1949 年美國空軍工程師莫非的實驗心得，提醒對潛在風險預做準備。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">83</span><span class="lname">手錶定律</span><span class="len">Segel's Law</span></div>
+          <div class="core">兩支錶反而讓你不知道現在幾點。</div>
+          <div class="origin">據傳李·塞格爾提出——同時採兩套標準，只會讓人無所適從。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">74</span><span class="lname">利基定理</span><span class="len">Niche Market</span></div>
+          <div class="core">專攻大企業忽略的小眾需求，反而活得好。</div>
+          <div class="origin">行銷概念，「利基」指被忽略卻有特定需求的細分市場，專注於此常有意外成功。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 主題四：認知與心理 -->
+    <div class="law-group">
+      <h4>認知 · 心理 · 影響力 <span class="gtag">看懂人的盲點</span></h4>
+      <p class="gsub">人如何高估自己、盲從、被獎勵澆熄熱情、活成別人的期待——洞察行為背後的心理機制。</p>
+      <div class="law-grid">
+        <div class="law">
+          <div class="lh"><span class="no">05</span><span class="lname">達克效應</span><span class="len">Dunning-Kruger Effect</span></div>
+          <div class="core">越是能力不足，越容易高估自己。</div>
+          <div class="origin">鄧寧與克魯格 1999 年提出的認知偏差——能力強的人反而容易低估自己。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">67</span><span class="lname">羊群效應</span><span class="len">Herd Effect</span></div>
+          <div class="core">放棄獨立思考，盲目跟隨大眾。</div>
+          <div class="origin">行為金融學與心理學的從眾效應，描述人類盲從的本能。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">68</span><span class="lname">鳥籠邏輯</span><span class="len">Birdcage Logic</span></div>
+          <div class="core">為了配合一個空鳥籠，你會去買一隻鳥。</div>
+          <div class="origin">心理學家威廉·詹姆斯的實驗，比喻人常受制於先入為主的盲目邏輯。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">70</span><span class="lname">德西效應</span><span class="len">Deci Effect</span></div>
+          <div class="core">不當的外在獎勵，會澆熄內在的熱情。</div>
+          <div class="origin">心理學家德西 1971 年證明——對本有興趣之事給錯獎勵，反而削弱內在動機。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">71</span><span class="lname">角色效應</span><span class="len">Role Effect</span></div>
+          <div class="core">人會不自覺演成角色被期待的樣子。</div>
+          <div class="origin">社會心理學概念，著名的「史丹佛監獄實驗」即為例證。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">72</span><span class="lname">冒牌貨症候群</span><span class="len">Imposter Syndrome</span></div>
+          <div class="core">越成功，越怕被拆穿「其實我不夠格」。</div>
+          <div class="origin">克蘭斯與艾姆斯 1978 年提出——成功者無法將成就歸因於自己的能力。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">77</span><span class="lname">鏡子效應</span><span class="len">Mirror Effect</span></div>
+          <div class="core">我們透過別人的反應來認識自己。</div>
+          <div class="origin">庫利提出的「鏡中自我」，也指人際互動中的心理投射現象。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">81</span><span class="lname">拿瓦第效應</span><span class="len">Self-Fulfilling Prophecy</span></div>
+          <div class="core">你相信刻板印象是真的，它就會成真。</div>
+          <div class="origin">對應心理學的自證預言與羅森塔爾效應——期望會塑造出它預期的結果。</div>
+        </div>
+        <div class="law">
+          <div class="lh"><span class="no">73</span><span class="lname">250 法則</span><span class="len">Law of 250</span></div>
+          <div class="core">得罪一個客戶，等於得罪他背後 250 個人。</div>
+          <div class="origin">世界最偉大推銷員喬·吉拉德的體悟——每個人身後約有 250 位親朋好友。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 科學借喻 -->
+    <div class="law-group">
+      <h4>科學借喻 <span class="gtag">跨界隱喻</span></h4>
+      <p class="gsub">一條借自物理的隱喻——非傳統管理定律，收錄以饗好奇。</p>
+      <div class="law-grid">
+        <div class="law">
+          <div class="lh"><span class="no">14</span><span class="lname">量子糾纏</span><span class="len">Quantum Entanglement</span></div>
+          <div class="core">借喻事物之間超越距離的深層連動。</div>
+          <div class="origin">量子力學現象，愛因斯坦稱其為「鬼魅般的超距作用」；此處被借為管理隱喻，非嚴格定義。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 數據決策方式 ===== -->
+  <section class="theme" id="data">
+    <div class="theme-head">
+      <span class="dot"></span>
+      <h2>數據決策地圖</h2>
+      <span class="pill">📊 4 層級 · 11 種常用方法</span>
+    </div>
+    <p class="theme-sub">面對一堆資料，該用哪一招？先用「四個決策層級」抓對高度，再從「方法工具箱」挑一把趁手的——每種方法都配一個一句話定義與一個生活化例子。</p>
+
+    <div class="data-intro">
+      <div class="k">📊 怎麼用這張地圖</div>
+      <h3>先問對問題，再挑對方法</h3>
+      <p>數據決策不是「跑個模型」，而是先想清楚你要回答哪一種問題：是想知道發生了什麼、為什麼、接下來會怎樣，還是該怎麼做。四個層級幫你定位問題，工具箱幫你動手。</p>
+    </div>
+
+    <!-- 四個決策層級 -->
+    <p class="levels-cap">🪜 決策四層級 · <b>越往右，價值與難度越高</b></p>
+    <div class="levels">
+      <div class="level">
+        <div class="lv">LV.1 · 描述性</div>
+        <div class="lvn">Descriptive</div>
+        <div class="lvq">發生了什麼？</div>
+        <div class="lvex">例：儀表板顯示上月營收比前月成長 12%。</div>
+      </div>
+      <div class="level">
+        <div class="lv">LV.2 · 診斷性</div>
+        <div class="lvn">Diagnostic</div>
+        <div class="lvq">為什麼會這樣？</div>
+        <div class="lvex">例：下鑽發現營收下滑，主因是週末訂單少了 30%。</div>
+      </div>
+      <div class="level">
+        <div class="lv">LV.3 · 預測性</div>
+        <div class="lvn">Predictive</div>
+        <div class="lvq">接下來會怎樣？</div>
+        <div class="lvex">例：依歷史推估下個月來客約 1,200 人。</div>
+      </div>
+      <div class="level">
+        <div class="lv">LV.4 · 指示性</div>
+        <div class="lvn">Prescriptive</div>
+        <div class="lvq">那該怎麼做？</div>
+        <div class="lvex">例：在預算限制下，模型建議把廣告集中投 A 通路。</div>
+      </div>
+    </div>
+
+    <!-- 方法工具箱：監督式 -->
+    <div class="law-group">
+      <h4>監督式學習 <span class="gtag">有標準答案可學</span></h4>
+      <p class="gsub">先給模型一批「已知答案」的資料學習，再讓它對新資料下判斷。</p>
+      <div class="dm-grid">
+        <div class="dm">
+          <span class="tag">分類</span>
+          <div class="dh"><span class="dname">分類</span><span class="den">Classification</span></div>
+          <div class="desc">把每一筆資料歸進「已知的類別」（是/否、A/B/C）。</div>
+          <div class="ex"><b>例：</b>判斷一位客戶「會不會流失」、一封信「是不是垃圾信」。</div>
+        </div>
+        <div class="dm">
+          <span class="tag">預測</span>
+          <div class="dh"><span class="dname">回歸預測</span><span class="den">Regression</span></div>
+          <div class="desc">預測一個「連續的數字」，而非類別。</div>
+          <div class="ex"><b>例：</b>預測下一季銷量、一間房子的成交價。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 方法工具箱：非監督式 -->
+    <div class="law-group">
+      <h4>非監督式學習 <span class="gtag">沒有答案，自己找規律</span></h4>
+      <p class="gsub">資料沒有預設標籤，讓演算法自己在裡面找出結構與樣式。</p>
+      <div class="dm-grid">
+        <div class="dm">
+          <span class="tag">分群</span>
+          <div class="dh"><span class="dname">分群</span><span class="den">Clustering</span></div>
+          <div class="desc">沒有預設類別，讓相似的資料自己聚成幾堆。</div>
+          <div class="ex"><b>例：</b>把顧客自動分成 5 種消費樣貌，各自設計行銷。</div>
+        </div>
+        <div class="dm">
+          <span class="tag">找組合</span>
+          <div class="dh"><span class="dname">關聯分析</span><span class="den">Association</span></div>
+          <div class="desc">找出「常一起出現」的東西之間的關係。</div>
+          <div class="ex"><b>例：</b>購物籃分析發現「買尿布的人也常買啤酒」。</div>
+        </div>
+        <div class="dm">
+          <span class="tag">找異常</span>
+          <div class="dh"><span class="dname">異常偵測</span><span class="den">Anomaly Detection</span></div>
+          <div class="desc">從大量正常資料中，揪出明顯不尋常的少數。</div>
+          <div class="ex"><b>例：</b>即時偵測信用卡盜刷、機台故障的前兆。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 方法工具箱：預測與決策 -->
+    <div class="law-group">
+      <h4>預測與決策 <span class="gtag">看趨勢、找因果、做最佳決定</span></h4>
+      <p class="gsub">從「會怎樣」進一步走到「為什麼」與「該怎麼做」。</p>
+      <div class="dm-grid">
+        <div class="dm">
+          <span class="tag">看趨勢</span>
+          <div class="dh"><span class="dname">時間序列</span><span class="den">Time Series</span></div>
+          <div class="desc">抓出資料隨時間變化的趨勢與季節性，據以外推。</div>
+          <div class="ex"><b>例：</b>預測雙 11 的流量尖峰、每月營收的週期。</div>
+        </div>
+        <div class="dm">
+          <span class="tag">驗因果</span>
+          <div class="dh"><span class="dname">A/B 測試與因果推論</span><span class="den">Causal Inference</span></div>
+          <div class="desc">驗證「真的是這個原因造成的嗎」，而非只是巧合相關。</div>
+          <div class="ex"><b>例：</b>按鈕改成紅色後轉換率上升，是真的有效還是剛好？</div>
+        </div>
+        <div class="dm">
+          <span class="tag">找最佳解</span>
+          <div class="dh"><span class="dname">最佳化</span><span class="den">Optimization</span></div>
+          <div class="desc">在有限資源與限制下，算出「最好」的那個方案。</div>
+          <div class="ex"><b>例：</b>排出人力成本最低的班表、規劃最短送貨路線。</div>
+        </div>
+        <div class="dm">
+          <span class="tag">推情境</span>
+          <div class="dh"><span class="dname">情境模擬</span><span class="den">Simulation</span></div>
+          <div class="desc">推演不同假設下可能發生的結果與風險範圍。</div>
+          <div class="ex"><b>例：</b>用蒙地卡羅模擬明年現金流的風險區間。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 方法工具箱：應用型任務 -->
+    <div class="law-group">
+      <h4>應用型任務 <span class="gtag">直接產出行動</span></h4>
+      <p class="gsub">把上面的方法組合起來，變成使用者一眼看得到的功能。</p>
+      <div class="dm-grid">
+        <div class="dm">
+          <span class="tag">推薦</span>
+          <div class="dh"><span class="dname">推薦系統</span><span class="den">Recommendation</span></div>
+          <div class="desc">依你和相似用戶的行為，推出你「可能也喜歡」的。</div>
+          <div class="ex"><b>例：</b>Netflix、蝦皮的「為你推薦」。</div>
+        </div>
+        <div class="dm">
+          <span class="tag">讀文字</span>
+          <div class="dh"><span class="dname">文字與情感分析</span><span class="den">Text / Sentiment</span></div>
+          <div class="desc">從大量文字中萃取主題、意見與情緒傾向。</div>
+          <div class="ex"><b>例：</b>分析上千則留言是正面還負面（輿情監測）。</div>
+        </div>
       </div>
     </div>
   </section>
