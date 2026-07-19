@@ -9,6 +9,7 @@
 與 `📊 數據決策`（決策四層級＋11 種數據分析方法）。Gem/GPT 皆建在 **jjaimark1@gmail.com** 帳號、公開分享。
 
 ## 下一個具體動作 ⭐
+✅ 2026-07-19 加「← 回藍鴨 Launchdock 主站」導流連結（hero 黃色 pill＋footer 連結），已 push。
 ✅ 全部上線完成，兩個新分頁已 push（2026-07-16）。站台 https://masters.launchdock.app/ live。
 目前無待辦；下次要新增大師 → 在對應主題 `<section>` 內複製一張 `.card` 改連結；
 新增定律 → 複製一張 `.law`；新增數據方法 → 複製一張 `.dm`。
